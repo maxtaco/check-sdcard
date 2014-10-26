@@ -64,6 +64,17 @@ class Runner
 
   #---------------------------
 
+  diff : (cb) ->
+    miss = false
+    for f in @sd.ord
+      unless @archive.map[f]?
+        console.log "M #{@sd.map[f].path}"
+        miss = true
+    err = if miss then (new Error "missing files!") else null
+    cb err
+
+  #---------------------------
+
   run : (cb) ->
     esc = make_esc cb, "Runner::run"
     await @parse_args esc defer()
