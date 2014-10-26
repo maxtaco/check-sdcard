@@ -1,0 +1,28 @@
+{
+  "name": "check-sdcard",
+  "version": "1.0.0",
+  "description": "Check archive to see photos are there before we delete them from SD card",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxtaco/check-sdcard"
+  },
+  "author": "Maxwell Krohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxtaco/check-sdcard/issues"
+  },
+  "homepage": "https://github.com/maxtaco/check-sdcard",
+  "devDependencies": {
+    "iced-coffee-script": "^1.8.0-a"
+  },
+  "dependencies": {
+    "iced-error": "0.0.9",
+    "iced-logger": "0.0.5",
+    "iced-runtime": "^1.0.2",
+    "minimist": "^1.1.0"
+  }
+}
